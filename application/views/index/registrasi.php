@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Registrasi | <?php echo $title; ?></title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="<?php echo site_url(); ?>/assets/images/fav-icon/icon.png">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/assets/css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="<?php echo site_url(); ?>/assets/css/responsive.css">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="<?php echo site_url(); ?>/assets/vendor/html5shiv.js"></script>
+			<script src="<?php echo site_url(); ?>/assets/vendor/respond.js"></script>
+		<![endif]-->
+
+			
+	</head>
+	
+	<body>
+		<div class="main-page-wrapper">
+
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+			</div>
+
+
+
+			<!-- 
+			=============================================
+				Theme Header
+			============================================== 
+			-->
+			
+
+
+		
+
+		
+
+
+<div class="course-search-form">
+				<div class="container">
+					<div class="title" style="margin-bottom:20px;">
+					<a href="<?php echo site_url(); ?>"><img src="<?php echo site_url(); ?>/upload/images/<?php echo $logo; ?>" alt="Logo" style="margin-bottom:10px;"></a>
+						<h2>Menjadi Anggota <span>Kitong Bisa</span> </h2>
+						<p>Berkontribusi dalam perubahan untuk Indonesia yang lebih baik. </p>
+					</div> <!-- /.title -->
+					
+					<?php echo form_open('index/registrasi_masuk', array(
+    'class' => 'course-form ',
+    'autocomplete' => 'off',
+    'style' => 'width:40%; padding:0;'
+)); ?>
+					<form method="POST" class="course-form" autocomplete="off"  style="width:40%; padding:0;">
+										<div class="single-input">
+											<label style=" color:white;">Email</label>
+											<input type="email" placeholder="Email Anda" name="email" autocomplete="off" required>
+										</div> <!-- /.single-input -->
+										<div class="single-input" style="padding-top:10px;">
+											<label style=" color:white;">Password</label>
+											<input type="password" placeholder="Password" name="password" autocomplete="new-password" required>
+										</div> <!-- /.single-input -->
+										<div class="single-input">
+											<label style=" color:white;">Nama Lengkap</label>
+											<input type="text" placeholder="Nama Lengkap Anda" name="nama_lengkap" required>
+										</div> <!-- /.single-input -->
+										<div class="single-input">
+											<label style=" color:white;">No. Handphone</label>
+											<input type="text" placeholder="Contoh: 082812312312" name="telepon" required>
+										</div> <!-- /.single-input -->
+										<input type="submit" value="Daftar" style="font-size: 20px;font-weight: 900;color: #151515;background: #fff;border-radius: 10px;padding:0px;margin-top:10px;">
+										
+					</form>
+					<?php echo form_close(); ?>
+					<a href="<?php echo site_url(); ?>index/login" style="all:unset;"><button class="course-form" style="width:40%;height:60px;font-size: 18px;font-weight: 900;color: #301F0F;background: #fff;border-radius: 10px;padding:0px;margin-top:10px;">Sudah Menjadi Anggota? Log In<button></a>
+					<a href="<?php echo site_url(); ?>" style="all:unset;"><button class="course-form" style="width:40%;height:60px;font-size: 18px;font-weight: 900;color: #301F0F;background: #fff;border-radius: 10px;padding:0px;margin-top:10px;">Kembali ke beranda<button></a>
+					</div> <!-- /.container -->
+			</div>
+
+		
+
+		
+
+			
+
+	  
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s">
+				<i class="fa fa-angle-up" aria-hidden="true"></i>
+			</button>
+
+			
+			
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script src="<?php echo site_url(); ?>/assets/vendor/jquery.2.2.3.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="<?php echo site_url(); ?>/assets/vendor/bootstrap/bootstrap.min.js"></script>
+		<!-- Bootstrap Select JS -->
+		<script type="text/javascript" src="<?php echo site_url(); ?>/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+		<!-- Camera Slider -->
+		<script type='text/javascript' src='<?php echo site_url(); ?>/assets/vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
+	    <script type='text/javascript' src='<?php echo site_url(); ?>/assets/vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
+	    <script type='text/javascript' src='<?php echo site_url(); ?>/assets/vendor/Camera-master/scripts/camera.min.js'></script>
+	    <!-- Mega menu  -->
+		<script type="text/javascript" src="<?php echo site_url(); ?>/assets/vendor/bootstrap-mega-menu/js/menu.js"></script>
+		<!-- WOW js -->
+		<script src="<?php echo site_url(); ?>/assets/vendor/WOW-master/dist/wow.min.js"></script>
+		<!-- owl.carousel -->
+		<script src="<?php echo site_url(); ?>/assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- Fancybox -->
+		<script type="text/javascript" src="<?php echo site_url(); ?>/assets/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="<?php echo site_url(); ?>/assets/js/theme.js"></script>
+
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
